@@ -73,7 +73,19 @@ like this:
 
 4. Create a button with the class `'resolution'`. Clicking this button changes
    the `settings.video.resolution` state property to `'720p'`.
-   
+
+**IMPORTANT:** In order for the `YouTubeDebugger` tests to pass, you must wrap the buttons in another element such as a `<div>` or a `<p>`. The `render()` method should (initially) look something like this:
+
+```js
+render() {
+  return (
+    <div>
+      <button></button>
+      <button></button>
+    </div>
+  )
+}
+```    
 
 ## A Note on Classes in React
 
